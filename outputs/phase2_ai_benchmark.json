@@ -1,0 +1,75 @@
+{
+  "n_total": 120,
+  "n_train": 96,
+  "n_test": 24,
+  "pod_modes": 12,
+  "pod_energy_captured": 0.9999999729323052,
+  "train_seconds": 19.726725600001373,
+  "best_epoch": 173,
+  "device_used": "cpu",
+  "regimes": [
+    {
+      "name": "A: Clean (12/12)",
+      "noise_std": 0.0,
+      "dead_sensors": 0,
+      "ai_rmse_mm": 0.12013239937754275,
+      "ai_uz_rmse_mm": 0.1989650691218121,
+      "ridge_rmse_mm": 0.09375104435391127,
+      "ridge_uz_rmse_mm": 0.16237948367238653,
+      "damage_acc_pct": 87.5,
+      "severity_mae": 0.1400008180982065,
+      "latency_ms": 0.6024634999994305
+    },
+    {
+      "name": "B: 3% Noise (12/12)",
+      "noise_std": 0.03,
+      "dead_sensors": 0,
+      "ai_rmse_mm": 0.6836265443260381,
+      "ai_uz_rmse_mm": 1.1824640450428567,
+      "ridge_rmse_mm": 0.3188260946292241,
+      "ridge_uz_rmse_mm": 0.5521765566047,
+      "damage_acc_pct": 89.16666666666669,
+      "severity_mae": 0.1506517041561834,
+      "latency_ms": 0.5577455000093323
+    },
+    {
+      "name": "C: Combat (3% + 2 Dead)",
+      "noise_std": 0.03,
+      "dead_sensors": 2,
+      "ai_rmse_mm": 0.6148544257631403,
+      "ai_uz_rmse_mm": 1.062746129523092,
+      "ridge_rmse_mm": 2.985649119357432,
+      "ridge_uz_rmse_mm": 5.1704047666861355,
+      "damage_acc_pct": 80.83333333333333,
+      "severity_mae": 0.16801852535001166,
+      "latency_ms": 0.8176674999958777
+    }
+  ],
+  "rf_recovery_scenario_c": {
+    "uncompensated": {
+      "mean_gain_loss_db": 0.698545445291454,
+      "max_gain_loss_db": 1.9743018085552695,
+      "mean_abs_boresight_err_deg": 3.163257510343197,
+      "mean_sll_db": -17.66870499304717
+    },
+    "ridge_blind_6bit": {
+      "mean_gain_loss_db": 0.14758867597124187,
+      "max_gain_loss_db": 0.3971112524036003,
+      "mean_abs_boresight_err_deg": 0.684926776919237,
+      "mean_sll_db": -24.252043590050263
+    },
+    "ai_blind_6bit": {
+      "mean_gain_loss_db": 0.09829972374876784,
+      "max_gain_loss_db": 0.2813594395795665,
+      "mean_abs_boresight_err_deg": 0.10021564506907366,
+      "mean_sll_db": -29.19513733658601
+    },
+    "oracle_6bit": {
+      "mean_gain_loss_db": 0.0961007184647159,
+      "max_gain_loss_db": 0.2717870282108352,
+      "mean_abs_boresight_err_deg": 0.0989520924892641,
+      "mean_sll_db": -29.368491187878163
+    }
+  },
+  "worst_case_index": 20
+}

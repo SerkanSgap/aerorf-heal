@@ -1,0 +1,31 @@
+# Virtual environment & Python caches
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Heavy ANSYS MAPDL scratch & binary result directories
+outputs/doe_batches/
+outputs/vv_cantilever/
+outputs/wingbox_5g_thermal/
+*.rst
+*.esav
+*.full
+*.DSP
+*.lock
+*.out
+*.err
+*.page
+*.stat
+*.mntr
+*.log
+*.bat
+*.db
+*.dbb
+tmp_epto.txt
+
+# OS / IDE clutter
+.DS_Store
+Thumbs.db
+.vscode/

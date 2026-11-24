@@ -1,0 +1,9 @@
+# Core Phase 1 & Phase 2 Dependencies
+numpy>=2.0
+scipy>=1.14
+pandas>=2.2
+plotly>=6.0
+streamlit>=1.40
+pillow>=10.0
+scikit-learn>=1.5
+torch>=2.4
